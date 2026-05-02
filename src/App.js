@@ -9,7 +9,7 @@ function App() {
     setIsLoading(true);
 
     let data= await fetch(
-      `https://v1.nocodeapi.com/shivaraj/spotify/eigjJrSHinuOrerE/search?q=
+      `https://v1.nocodeapi.com/sanjana18/spotify/qKkbCvUaQhzcPWUA/search?q=
       ${keyword ===""?"trading":keyword}
       &type=track`
     );
@@ -20,6 +20,7 @@ function App() {
   };
   useEffect(()=>{
     getTracks()
+  
   },[])
   return (
   <>
@@ -67,7 +68,7 @@ function App() {
                 className="col-lg-6 col-md-6 py-2">                
                 <div className="card">
                   <img 
-                    src={element.album.images[0].url} 
+                    src={element.album.images[0].url}
                     className="card-img-top" 
                     alt="..." />
                       <div className="card-body">
